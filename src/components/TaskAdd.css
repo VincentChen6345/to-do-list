@@ -4,10 +4,31 @@
   padding: 2rem 2rem;
 }
 .input__form {
+  display: flex;
+  flex-direction: column;
 }
 .input__field {
   font-size: 1.8rem;
   padding: 1rem 1rem;
+  flex-grow: 1;
+}
+.input__priority {
+  outline: solid 1px var(--light-grey);
+  padding: 1rem 1rem;
+  margin-left: 2rem;
+}
+.input__submit-button {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  padding: 1rem 1rem;
+  width: 100%;
 }
 .input__dropdown {
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
 }
