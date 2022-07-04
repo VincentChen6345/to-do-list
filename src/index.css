@@ -20,4 +20,6 @@ code {
   --color-primary: rgb(26, 147, 169);
   --color-secondary: rgb(208, 28, 54);
   --color-tertiary: rgb(227, 172, 0);
+  --border-radius: 0.3rem;
+  --color-white: rgb(255, 255, 255);
 }
