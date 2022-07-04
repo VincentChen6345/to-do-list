@@ -1,0 +1,13 @@
+.input__container {
+  outline: solid 1px var(--light-grey);
+  border-radius: 0.3rem;
+  padding: 2rem 2rem;
+}
+.input__form {
+}
+.input__field {
+  font-size: 1.8rem;
+  padding: 1rem 1rem;
+}
+.input__dropdown {
+}
