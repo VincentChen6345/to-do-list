@@ -1,0 +1,17 @@
+Project: To-Do List - built with React
+
+Status: currently can only add new tasks, not edit or delete yet
+
+React concepts used:
+
+- props
+- listening to events & eventHandlers
+- working with state, lifting the state up
+- rendering lists of data
+
+Things You Told Me To Keep In Mind:
+
+- use .jsx if its a jsx file
+- all file names should use PascalCase
+- variables should use camelCase
+- use self-closing html tags where possible
