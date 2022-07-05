@@ -3,6 +3,7 @@
   border-radius: var(--border-radius);
 
   padding: 2rem 2rem;
+  margin-bottom: 3rem;
 }
 .input__form {
   display: flex;

@@ -1,6 +1,8 @@
 import "./App.css";
 import TaskAdd from "./components/TaskAdd";
 import TaskItem from "./components/TaskItem";
+import taskData from "./data/TaskData";
+import TaskList from "./components/TaskList";
 
 function App() {
   return (
@@ -8,7 +10,7 @@ function App() {
       <div className="main-container">
         <h1 className="title">React To-Do List</h1>
         <TaskAdd />
-        <TaskItem />
+        <TaskList data={taskData} />
       </div>
     </div>
   );

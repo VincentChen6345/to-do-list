@@ -22,4 +22,7 @@ code {
   --color-tertiary: rgb(227, 172, 0);
   --border-radius: 0.3rem;
   --color-white: rgb(255, 255, 255);
+  --priority-high: rgb(240, 139, 154);
+  --priority-medium: rgb(244, 208, 99);
+  --priority-low: rgb(117, 207, 126);
 }

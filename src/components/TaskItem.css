@@ -1,0 +1,51 @@
+.TaskItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 2.5rem;
+  align-items: center;
+  border: solid 1px var(--light-grey);
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+}
+.TaskTitle {
+  font-size: 1.7rem;
+}
+.right-side {
+  display: flex;
+  align-items: center;
+}
+.priority {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border: solid 1px var(--light-grey);
+  padding: 1rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1.7rem;
+  width: 10rem;
+  text-align: center;
+}
+.checkbox {
+  margin-left: 1.5rem;
+}
+.EditIcon {
+  margin-left: 1.5rem;
+  width: 2.3rem;
+  fill: var(--color-tertiary);
+}
+.TrashIcon {
+  margin-left: 1.5rem;
+  width: 2.3rem;
+  fill: var(--color-secondary);
+}
+.high {
+  border-color: var(--priority-high);
+  border-width: 3px;
+}
+.medium {
+  border-color: var(--priority-medium);
+  border-width: 3px;
+}
+.low {
+  border-color: var(--priority-low);
+  border-width: 3px;
+}
