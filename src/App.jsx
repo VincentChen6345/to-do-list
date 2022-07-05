@@ -1,6 +1,5 @@
 import "./App.css";
 import TaskAdd from "./components/TaskAdd";
-import TaskItem from "./components/TaskItem";
 import taskData from "./data/TaskData";
 import TaskList from "./components/TaskList";
 
