@@ -22,6 +22,7 @@ const TaskItem = (props) => {
             name="vehicle1"
             value="Bike"
           />
+
           <EditIcon className="EditIcon" />
           <TrashIcon className="TrashIcon" />
         </span>
