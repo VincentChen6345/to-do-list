@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const TaskAdd = (props) => {
   const [enteredTask, setEnteredTask] = useState("");
-  const [enteredPriority, setEnteredPriority] = useState("");
+  const [enteredPriority, setEnteredPriority] = useState("high");
   const priorityChangeHandler = (e) => {
     setEnteredPriority(e.target.value);
   };
