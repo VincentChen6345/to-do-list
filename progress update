@@ -1,0 +1,9 @@
+
+Attempted to filter rendered components off their 'checked' status by clicking the complete button.
+Current thought processs
+1. check the checkbox sets checkBoxStatus=true in TaskItem.jsx
+2. this variable is lifted in TaskList.jsx and updates the relevant object
+3. use filter method to filter for objects that contain checked:true, then rendered
+
+Problem
+- I dont know how to update the individual object key:value pair.

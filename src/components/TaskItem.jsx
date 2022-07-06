@@ -11,14 +11,18 @@ const TaskItem = (props) => {
   if (props.priority === "low") priorityClassName += "low";
 
   const [taskTitleClassName, setTaskTitleClassName] = useState("TaskTitle");
-  const checkboxChangeHandler = () => {
-    console.log("checkbox handler executed");
+  // const [checkBoxStatus, setCheckBoxStatus] = useState(false);
+  // const checkboxChangeHandler = () => {
+  //   //when checked, add a 'checked' class to the class "TaskTitle" which crosses out the text
+  //   setTaskTitleClassName(
+  //     taskTitleClassName === "TaskTitle" ? "TaskTitle checked" : "TaskTitle"
+  //   );
+  //   setCheckBoxStatus(checkBoxStatus === false ? true : false);
 
-    //when checked, add a 'checked' class to the class "TaskTitle" which crosses out the text
-    setTaskTitleClassName(
-      taskTitleClassName === "TaskTitle" ? "TaskTitle checked" : "TaskTitle"
-    );
-  };
+  //   // props.onCheck(checkBoxStatus);
+
+  //   console.log(checkBoxStatus);
+  // };
 
   return (
     <div>
@@ -29,10 +33,7 @@ const TaskItem = (props) => {
           <input
             className="checkbox"
             type="checkbox"
-            // id="vehicle1"
-            // name="vehicle1"
-            // value="Bike"
-            onChange={checkboxChangeHandler}
+            // onChange={checkboxChangeHandler}
           />
 
           <EditIcon className="EditIcon" />
