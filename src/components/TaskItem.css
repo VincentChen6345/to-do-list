@@ -52,3 +52,23 @@
   border-color: var(--priority-low);
   border-width: 3px;
 }
+
+@media only screen and (max-width: 450px) {
+  .TaskItem {
+    padding: 0.6rem 1.5rem;
+  }
+  .checkbox {
+    margin-left: 1rem;
+  }
+  .EditIcon {
+    margin-left: 1rem;
+  }
+  .TrashIcon {
+    margin-left: 1rem;
+  }
+  .priority {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+}
