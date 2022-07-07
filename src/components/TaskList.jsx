@@ -9,6 +9,8 @@ const TaskList = (props) => {
           title={taskItem.title}
           priority={taskItem.priority}
           key={taskItem.id}
+          id={taskItem.id}
+          onDelete={props.onDeleteItem}
         />
       ))}
     </div>

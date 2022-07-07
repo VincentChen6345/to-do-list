@@ -19,6 +19,9 @@ const TaskItem = (props) => {
       taskTitleClassName === "TaskTitle" ? "TaskTitle checked" : "TaskTitle"
     );
   };
+  const deleteHandler = () => {
+    props.onDelete(props.id);
+  };
 
   return (
     <div>
@@ -36,7 +39,9 @@ const TaskItem = (props) => {
           />
 
           <EditIcon className="EditIcon" />
-          <TrashIcon className="TrashIcon" />
+          <button className="delete-button" onClick={deleteHandler}>
+            <TrashIcon className="TrashIcon" />
+          </button>
         </span>
       </div>
     </div>
