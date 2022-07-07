@@ -11,6 +11,7 @@ const TaskList = (props) => {
           key={taskItem.id}
           id={taskItem.id}
           onDelete={props.onDeleteItem}
+          checked={props.onCheckBox}
         />
       ))}
     </div>

@@ -11,13 +11,18 @@ const TaskItem = (props) => {
   if (props.priority === "low") priorityClassName += "low";
 
   const [taskTitleClassName, setTaskTitleClassName] = useState("TaskTitle");
+  const [checkedStatus, setCheckedStatus] = useState(false);
   const checkboxChangeHandler = () => {
-    console.log("checkbox handler executed");
+    //when checked,the checked status becomes 'true', this gets sent up and updated in the object based on the ID of the checked TaskItem
+
+    setCheckedStatus(checkedStatus === false ? true : false);
+    console.log(`status of task ${props.id} is ${checkedStatus}`);
 
     //when checked, add a 'checked' class to the class "TaskTitle" which crosses out the text
     setTaskTitleClassName(
       taskTitleClassName === "TaskTitle" ? "TaskTitle checked" : "TaskTitle"
     );
+    props.checked(checkedStatus, props.id);
   };
   const deleteHandler = () => {
     props.onDelete(props.id);
@@ -32,9 +37,6 @@ const TaskItem = (props) => {
           <input
             className="checkbox"
             type="checkbox"
-            // id="vehicle1"
-            // name="vehicle1"
-            // value="Bike"
             onChange={checkboxChangeHandler}
           />
 
