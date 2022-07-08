@@ -17,6 +17,10 @@
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
+.input__field.invalid {
+  border-color: red;
+  background-color: rgba(255, 160, 160, 0.495);
+}
 .input__priority {
   outline: solid 1px var(--light-grey);
   padding: 1rem 1rem;

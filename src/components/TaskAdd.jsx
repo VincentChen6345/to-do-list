@@ -5,14 +5,20 @@ import React, { useState } from "react";
 const TaskAdd = (props) => {
   const [enteredTask, setEnteredTask] = useState("");
   const [enteredPriority, setEnteredPriority] = useState("high");
+  const [validEntry, setValidEntry] = useState(true);
   const priorityChangeHandler = (e) => {
     setEnteredPriority(e.target.value);
   };
   const taskChangeHandler = (e) => {
     setEnteredTask(e.target.value);
+    setValidEntry(true);
   };
   const submitHandler = (e) => {
     e.preventDefault();
+    if (enteredTask.trim().length === 0) {
+      setValidEntry(false);
+      return;
+    }
     const taskData = {
       title: enteredTask,
       priority: enteredPriority,
@@ -29,7 +35,9 @@ const TaskAdd = (props) => {
             <DotPointIcon className="DotPointIcon" />
             <input
               type="text"
-              className="input__field"
+              className={`input__field ${
+                validEntry === false ? "invalid" : ""
+              }`}
               placeholder="Add Task"
               onChange={taskChangeHandler}
               value={enteredTask}

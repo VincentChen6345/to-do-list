@@ -12,8 +12,6 @@ const TaskItem = (props) => {
 
   const [taskTitleClassName, setTaskTitleClassName] = useState("TaskTitle");
   const checkboxChangeHandler = () => {
-    console.log("checkbox handler executed");
-
     //when checked, add a 'checked' class to the class "TaskTitle" which crosses out the text
     setTaskTitleClassName(
       taskTitleClassName === "TaskTitle" ? "TaskTitle checked" : "TaskTitle"
