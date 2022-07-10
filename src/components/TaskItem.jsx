@@ -3,6 +3,7 @@ import { ReactComponent as EditIcon } from "../assets/SVG/pencil.svg";
 import { ReactComponent as TrashIcon } from "../assets/SVG/bin.svg";
 import "./TaskItem.css";
 import React, { useState } from "react";
+import TaskTitle from "./functionality/TaskTitle";
 
 const TaskItem = (props) => {
   let priorityClassName = "priority ";
@@ -24,15 +25,13 @@ const TaskItem = (props) => {
   return (
     <div>
       <div className="TaskItem">
-        <span className={taskTitleClassName}>{props.title}</span>
+        <TaskTitle className={taskTitleClassName} title={props.title} />
+        {/* <span className={taskTitleClassName}>{props.title}</span> */}
         <span className="right-side">
           <span className={priorityClassName}>{props.priority}</span>
           <input
             className="checkbox"
             type="checkbox"
-            // id="vehicle1"
-            // name="vehicle1"
-            // value="Bike"
             onChange={checkboxChangeHandler}
           />
 
